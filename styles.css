@@ -12,6 +12,7 @@
 
 body {
     background-color: var(--Electric-Blue);
+    font-family: 'Roboto';
 }
 
 .start-screen {
@@ -23,6 +24,7 @@ body {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     border-radius: 30px;
+    border: 1px solid var(--black);
     padding: 20px;
     padding-bottom: 5px;
 }
