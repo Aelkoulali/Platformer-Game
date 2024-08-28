@@ -38,5 +38,29 @@ body {
     line-height: 2rem;
 }
 
+.btn {
+    cursor: pointer;
+    width: 100px;
+    margin: 10px;
+    color: #0a0a23;
+    font-size: 18px;
+    background-color: var(--gold);
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border-color: var(--black);
+    border-radius: 12px;
+    
+}
+  
+.btn:hover {
+    background-image: linear-gradient(#ffcc4c, #f89808);
+}
+  
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+
+  
   
