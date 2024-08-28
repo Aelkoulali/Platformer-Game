@@ -26,3 +26,17 @@ body {
     padding: 20px;
     padding-bottom: 5px;
 }
+
+.main-title {
+    text-align: center;
+}
+  
+.instructions {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 15px;
+    line-height: 2rem;
+}
+
+
+  
