@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+:root {
+    --grey:#f6f2f2;
+    --Electric-Blue:#59CBE8;
+    --gold:#facb20;
+    --black:#000000;
+}  
+
+body {
+    background-color: var(--Electric-Blue);
+}
+
+.start-screen {
+    background-color: var(--grey);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    padding: 20px;
+    padding-bottom: 5px;
+}
