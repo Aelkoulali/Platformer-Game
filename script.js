@@ -61,5 +61,10 @@ update() {
 
 //Create a new player
 const player = new Player();
+ 
+const startGame = () => {
+    canvas.style.display = "block"; //display the canvas element and hide the startScreen container
+    startScreen.style.display = "none";
+};
 
 
