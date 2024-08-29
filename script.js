@@ -22,5 +22,10 @@ class Player {
             x : proportionalSize(10),
             y : proportionalSize(400),
         };
+        this.velocity = {
+            x: 0,
+            y: 0,
+        }
+
     }
 }  
