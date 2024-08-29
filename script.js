@@ -90,3 +90,7 @@ const keys = {
     leftKey : {pressed: false},
 }
 
+// Functionality responsible for moving the player across the screen
+const movePlayer = (key, xVelocity, isPressed) => {
+
+}
