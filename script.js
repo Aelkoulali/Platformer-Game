@@ -68,4 +68,6 @@ const startGame = () => {
     player.draw(); //visualize the player on the screen
 };
 
+startBtn.addEventListener("click", startGame);
+
 
