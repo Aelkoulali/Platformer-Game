@@ -73,6 +73,7 @@ startBtn.addEventListener("click", startGame);
 // Declare animate function
 const animate = () => {
     requestAnimationFrame(animate);
-
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    player.update();
 }
 
