@@ -59,3 +59,7 @@ update() {
     };
 }
 
+//Create a new player
+const player = new Player();
+
+
