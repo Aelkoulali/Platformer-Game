@@ -39,6 +39,9 @@ draw() {
 update() {
     this.draw();
     this.position.x += this.velocity.x; // when the playermove to the right     
-    this.position.y += this.velocity.y; // when the player jumps up  
+    this.position.y += this.velocity.y; // when the player jumps up 
+    if (this.position.y + this.height + this.velocity.y <= canvas.height && this.position.y < 0 ){
+
+    };
     }
 }
