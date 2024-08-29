@@ -77,3 +77,9 @@ const animate = () => {
     player.update();
 }
 
+// Manage the player's movement in the game
+const keys = {
+    rightKey : {pressed: false},
+    leftKey : {pressed: false},
+}
+
