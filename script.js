@@ -8,3 +8,5 @@ const checkpointMessage = document.querySelector(".checkpoint-screen > p");
 // Set up the ability to add 2D graphics
 const ctx = canvas.getContext("2d");
 canvas.width = innerWidth;
+canvas.height = innerHeight;
+const gravity = 0.5;
