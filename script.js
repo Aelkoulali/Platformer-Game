@@ -65,6 +65,7 @@ const player = new Player();
 const startGame = () => {
     canvas.style.display = "block"; //display the canvas element and hide the startScreen container
     startScreen.style.display = "none";
+    player.draw(); //visualize the player on the screen
 };
 
 
