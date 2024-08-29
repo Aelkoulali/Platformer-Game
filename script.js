@@ -67,7 +67,12 @@ const startGame = () => {
     startScreen.style.display = "none";
     player.draw(); //visualize the player on the screen
 };
-
+// Add eventlistener to startBtn
 startBtn.addEventListener("click", startGame);
 
+// Declare animate function
+const animate = () => {
+    requestAnimationFrame(animate);
+
+}
 
