@@ -38,6 +38,7 @@ draw() {
 // Update player posiiton, velocity...
 update() {
     this.draw();
-    this.position.x += this.velocity.x;        
+    this.position.x += this.velocity.x; // when the playermove to the right     
+    this.position.y += this.velocity.y; // when the player jumps up  
     }
 }
