@@ -14,4 +14,10 @@ let isCheckpointCollisionDetectionActive = true; // opportunity to cross differe
 const proportionalSize = (size) => {
     return innerHeight < 500 ? Math.ceil((size / 500) * innerHeight) : size;
   }
-  
+
+// Player characteristics
+class Player {
+    constructor(){
+        
+    }
+}  
