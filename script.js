@@ -37,7 +37,7 @@ draw() {
 }
 // Update player posiiton, velocity...
 update() {
-
-}
-
+    this.draw();
+    this.position.x += this.velocity.x;        
+    }
 }
