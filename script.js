@@ -5,8 +5,13 @@ const startScreen = document.querySelector(".start-screen");
 const checkpointScreen = document.querySelector(".checkpoint-screen");
 const checkpointMessage = document.querySelector(".checkpoint-screen > p");
 
-// Set up the ability to add 2D graphics
+// 2D graphics, dimensions, gravity, proportions, checkpoints
 const ctx = canvas.getContext("2d");
 canvas.width = innerWidth;
 canvas.height = innerHeight;
-const gravity = 0.5;
+const gravity = 0.5; 
+let isCheckpointCollisionDetectionActive = true; // opportunity to cross different checkpoints
+const proportionalSize = (size) => {
+    return innerHeight < 500 ? Math.ceil((size / 500) * innerHeight) : size;
+  }
+  
