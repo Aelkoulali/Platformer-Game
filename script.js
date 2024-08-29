@@ -92,5 +92,10 @@ const keys = {
 
 // Functionality responsible for moving the player across the screen
 const movePlayer = (key, xVelocity, isPressed) => {
+    if(!isCheckpointCollisionDetectionActive){
+        player.velocity.x = 0;
+        player.velocity.y = 0;
+        return;
+    }
 
 }
