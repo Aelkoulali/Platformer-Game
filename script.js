@@ -55,13 +55,20 @@ update() {
         if (this.position.x >= canvas.width - this.width * 2) {
             this.position.x = canvas.width - this.width * 2;
         }
-
-    };
+    }
 }
+
 // Create platforms and platform logic
 class Platform {
-    constructor(x, y){}
-
+    constructor(x, y){
+        this.position = {
+            x,
+            y,
+        }
+        this.width = 200;
+        this.height = proportionalSize(40);
+    }
+    draw(){}
 }
 
 // Create a new player
@@ -115,9 +122,7 @@ const movePlayer = (key, xVelocity, isPressed) => {
         keys.rightKey.pressed = isPressed;
         if (xVelocity === 0){player.velocity.x = xVelocity};
         player.velocity.x += xVelocity;
-           
     };
-
 }
 
 // Add addEventListener to startBtn
