@@ -107,8 +107,12 @@ const movePlayer = (key, xVelocity, isPressed) => {
         case " ":
         case "Spacebar":
         player.velocity.y-= 8;
-        break;     
-
+        break;
+        case "ArrowRight":
+        keys.rightKey.pressed = isPressed;
+        if (xVelocity === 0){player.velocity.x = xVelocity};
+        player.velocity.x += xVelocity;
+           
     };
 
 }
