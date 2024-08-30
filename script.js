@@ -92,6 +92,11 @@ const platformPositions = [
     { x: 4400, y: proportionalSize(200) },
     { x: 4700, y: proportionalSize(150) },    
 ];
+
+// Create a list of new platform instances 
+const platforms = platformPositions.map(
+
+);
  
 const startGame = () => {
     canvas.style.display = "block"; //display the canvas element and hide the startScreen container
