@@ -67,8 +67,15 @@ const startGame = () => {
     startScreen.style.display = "none";
     player.draw(); //visualize the player on the screen
 };
-// Add eventlistener to startBtn
+// Add addEventListener to startBtn
 startBtn.addEventListener("click", startGame);
+
+// Add addEventListener to the global window object
+window.addEventListener("keydown", ({ key }) => {
+    movePlayer(key, 8, true);
+    }
+);
+  
 
 // Declare animate function
 const animate = () => {
