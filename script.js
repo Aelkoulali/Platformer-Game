@@ -58,6 +58,11 @@ update() {
 
     };
 }
+// Create platforms and platform logic
+class Platform {
+    constructor(x, y){}
+
+}
 
 // Create a new player
 const player = new Player();
