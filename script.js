@@ -68,7 +68,10 @@ class Platform {
         this.width = 200;
         this.height = proportionalSize(40);
     }
-    draw(){}
+    draw(){
+        ctx.fillStyle = "#acd157";
+        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+    }
 }
 
 // Create a new player
