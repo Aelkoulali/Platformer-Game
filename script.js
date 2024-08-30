@@ -75,6 +75,11 @@ window.addEventListener("keydown", ({ key }) => {
     movePlayer(key, 8, true);
     }
 );
+// Add another addEventListener to the global window 
+window.addEventListener("keyup", ({ key }) => {
+    movePlayer(key, 0, false);
+   }
+);
   
 
 // Declare animate function
