@@ -76,6 +76,9 @@ class Platform {
 
 // Create a new player
 const player = new Player();
+
+// Create a list of positions for the platforms
+const platformPositions = [];
  
 const startGame = () => {
     canvas.style.display = "block"; //display the canvas element and hide the startScreen container
