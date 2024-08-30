@@ -59,28 +59,14 @@ update() {
     };
 }
 
-//Create a new player
+// Create a new player
 const player = new Player();
  
 const startGame = () => {
     canvas.style.display = "block"; //display the canvas element and hide the startScreen container
     startScreen.style.display = "none";
-    player.draw(); //visualize the player on the screen
+    animate(); //visualize the player on the screen
 };
-// Add addEventListener to startBtn
-startBtn.addEventListener("click", startGame);
-
-// Add addEventListener to the global window object
-window.addEventListener("keydown", ({ key }) => {
-    movePlayer(key, 8, true);
-    }
-);
-// Add another addEventListener to the global window 
-window.addEventListener("keyup", ({ key }) => {
-    movePlayer(key, 0, false);
-   }
-);
-  
 
 // Declare animate function
 const animate = () => {
@@ -128,3 +114,18 @@ const movePlayer = (key, xVelocity, isPressed) => {
     };
 
 }
+
+// Add addEventListener to startBtn
+startBtn.addEventListener("click", startGame);
+
+// Add addEventListener to the global window object
+window.addEventListener("keydown", ({ key }) => {
+    movePlayer(key, 8, true);
+    }
+);
+
+// Add another addEventListener to the global window 
+window.addEventListener("keyup", ({ key }) => {
+    movePlayer(key, 0, false);
+   }
+);
