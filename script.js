@@ -74,6 +74,9 @@ class Platform {
     }
 }
 
+// Add the logic for the checkpoints
+
+
 // Create a new player
 const player = new Player();
 
@@ -141,8 +144,7 @@ const animate = () => {
         if(platformDetectionRules.every(element => element)){
             player.position.y = platform.position.y + player.height;
             player.velocity.y = gravity;
-        };
-    
+        };    
     });
 }
 
