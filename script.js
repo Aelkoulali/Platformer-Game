@@ -86,6 +86,12 @@ class checkpoints {
         ctx.fillStyle = "#f1be32";
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
     }
+    claim(){
+        this.width = 0;
+        this.height = 0;
+        this.position.y = Infinity;
+        this.claimed = true;    
+    }
 }
 
 // Create a new player
