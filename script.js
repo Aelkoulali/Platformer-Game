@@ -75,7 +75,9 @@ class Platform {
 }
 
 // Add the logic for the checkpoints
-
+class checkpoints {
+    constructor(x, y, z){}
+}
 
 // Create a new player
 const player = new Player();
