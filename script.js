@@ -171,7 +171,10 @@ const animate = () => {
     });
     // Update animate function to display the checkpoint screen when the player reaches a checkpoint
     checkpoints.forEach((checkpoint, index, checkpoints) => {
-        
+        const checkpointDetectionRules =[
+            player.position.x >= checkpoint.position.x,
+      
+          ]
     });
 }
 
