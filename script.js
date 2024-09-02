@@ -115,9 +115,13 @@ const animate = () => {
     } else {
         player.velocity.x = 0;
         if(keys.rightKey.pressed && isCheckpointCollisionDetectionActive){
-            platforms.forEach((platform) => {platform.position.x = -5});
+            platforms.forEach((platform) => {platform.position.x -= 5});
+        } else if (keys.leftKey.pressed){
+            platforms.forEach((platform) => {platform.position.x += 5});
         }
     }
+    // Add detection collision logic 
+    platforms.forEach((platform) => {});
 }
 
 // Manage the player's movement in the game
