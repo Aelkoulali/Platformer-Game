@@ -76,7 +76,11 @@ class Platform {
 
 // Add the logic for the checkpoints
 class checkpoints {
-    constructor(x, y, z){}
+    constructor(x, y, z){
+        this.position = {x, y};
+        this.width = proportionalSize(40);
+        this.height = proportionalSize(70);
+    }
 }
 
 // Create a new player
