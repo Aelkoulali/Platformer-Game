@@ -169,6 +169,10 @@ const animate = () => {
             player.velocity.y = gravity;
         };    
     });
+    // Update animate function to display the checkpoint screen when the player reaches a checkpoint
+    checkpoints.forEach((checkpoint, index, checkpoints) => {
+        
+    });
 }
 
 // Manage the player's movement in the game
