@@ -209,6 +209,12 @@ const startGame = () => {
     animate(); //visualize the player on the screen
 };
 
+// Add a function that will show the checkpoint message when the player reaches a checkpoint
+const showCheckpointScreen = (msg) => {
+    checkpointScreen.style.display = "block";
+    checkpointMessage.textContent = msg;
+};
+
 // Add addEventListener to startBtn
 startBtn.addEventListener("click", startGame);
 
