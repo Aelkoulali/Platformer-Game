@@ -174,7 +174,9 @@ const animate = () => {
         const checkpointDetectionRules =[
             player.position.x >= checkpoint.position.x,
             player.position.y + player.height <= checkpoint.position.y + checkpoint.height,
-            isCheckpointCollisionDetectionActive      
+            isCheckpointCollisionDetectionActive,
+            player.position.x - player.width <= checkpoint.position.x - checkpoint.width  + player.width * 0.9,
+            index === 0 || checkpoints[index - 1].claimed === true,    
           ]
     });
 }
