@@ -177,23 +177,25 @@ const animate = () => {
             isCheckpointCollisionDetectionActive,
             player.position.x - player.width <= checkpoint.position.x - checkpoint.width  + player.width * 0.9,
             index === 0 || checkpoints[index - 1].claimed === true,    
-          ]
-          if (checkpointDetectionRules.every((rule) => rule)) {
+        ];
+        if (checkpointDetectionRules.every((rule) => rule)) {
             checkpoint.claim();
-          };
-          if(index === checkpoints.length - 1){
+        if (index === checkpoints.length - 1){
             isCheckpointCollisionDetectionActive = false;
             showCheckpointScreen("You reached the final checkpoint!");
             movePlayer("ArrowRight", 0, false);
-          };
+        } else if (player.position.x >= checkpoint.position.x && player.position.x <= checkpoint.position.x + 40){
+            showCheckpointScreen("You reached a checkpoint!");
+        }}
     });
-}
+};      
+    
 
 // Manage the player's movement in the game
 const keys = {
     rightKey : {pressed: false},
     leftKey : {pressed: false},
-}
+};
 
 // Functionality responsible for moving the player across the screen
 const movePlayer = (key, xVelocity, isPressed) => {
@@ -233,7 +235,7 @@ const showCheckpointScreen = (msg) => {
     checkpointMessage.textContent = msg;
     if(isCheckpointCollisionDetectionActive){
         setTimeout(() =>{checkpointScreen.style.display = "none"}, 2000);
-    };
+    }
 };
 
 // Add addEventListener to startBtn
