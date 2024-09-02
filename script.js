@@ -75,7 +75,7 @@ class Platform {
 }
 
 // Add the logic for the checkpoints
-class checkpoints {
+class CheckPoint {
     constructor(x, y, z){
         this.position = {x, y};
         this.width = proportionalSize(40);
@@ -114,7 +114,7 @@ const platformPositions = [
 ];
 
 // Create a list of new platform instances 
-const platforms = platformPositions.map(platform => new Platform(platform.x, platform.y));
+const platforms = platformPositions.map((platform) => new Platform(platform.x, platform.y));
 
 // Create a list of checkpoints positions
 const checkpointPositions = [
@@ -123,12 +123,14 @@ const checkpointPositions = [
     { x: 4800, y: proportionalSize(80), z: 3 }
 ];
 
-const checkpoints  = checkpointPositions.map(checkpoint => new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z));
+const checkpoints = checkpointPositions.map((checkpoint) => new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z));
+
 // Declare animate function
 const animate = () => {
     requestAnimationFrame(animate);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     platforms.forEach(platform => platform.draw());
+    checkpoints.forEach((checkpoint) => checkpoint.draw());
     player.update();
     if (keys.rightKey.pressed && player.position.x < proportionalSize(400)){
         player.velocity.x = 5;
