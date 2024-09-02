@@ -115,12 +115,13 @@ const platformPositions = [
 
 // Create a list of new platform instances 
 const platforms = platformPositions.map(platform => new Platform(platform.x, platform.y));
- 
-const startGame = () => {
-    canvas.style.display = "block"; //display the canvas element and hide the startScreen container
-    startScreen.style.display = "none";
-    animate(); //visualize the player on the screen
-};
+
+// Create a list of checkpoints positions
+const checkpointPositions = [
+    { x: 1170, y: proportionalSize(80), z: 1 },
+    { x: 2900, y: proportionalSize(330), z: 2 },
+    { x: 4800, y: proportionalSize(80), z: 3 }
+];
 
 // Declare animate function
 const animate = () => {
@@ -195,6 +196,13 @@ const movePlayer = (key, xVelocity, isPressed) => {
         player.velocity.x += xVelocity;
     };
 }
+
+// Start the game
+const startGame = () => {
+    canvas.style.display = "block"; //display the canvas element and hide the startScreen container
+    startScreen.style.display = "none";
+    animate(); //visualize the player on the screen
+};
 
 // Add addEventListener to startBtn
 startBtn.addEventListener("click", startGame);
