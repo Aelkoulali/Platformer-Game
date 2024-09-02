@@ -5,13 +5,14 @@
   }
 :root {
     --grey:#f6f2f2;
-    --Electric-Blue:#59CBE8;
+    --Blue:#00F1FF;
     --gold:#facb20;
+    --green:#17f038; 
     --black:#000000;
 }  
 
 body {
-    background-color: var(--Electric-Blue);
+    background-color: var(--Blue);
     font-family: 'Roboto';
 }
 
@@ -47,14 +48,12 @@ body {
     color: #0a0a23;
     font-size: 18px;
     background-color: var(--gold);
-    background-image: linear-gradient(#fecc4c, #ffac33);
     border-color: var(--black);
-    border-radius: 12px;
-    
+    border-radius: 12px;    
 }
   
 .btn:hover {
-    background-image: linear-gradient(#ffcc4c, #f89808);
+    background-color: var(--green);
 }
   
 .btn-container {

@@ -32,7 +32,7 @@ class Player {
 
 // Player's width, height, position 
 draw() {
-    ctx.fillStyle = "#99c9ff";
+    ctx.fillStyle = "#000000";
     ctx.fillRect(this.position.x, this.position.y, this.width, this.height); // Player shape
 }
 // Update player posiiton, velocity...
@@ -69,7 +69,7 @@ class Platform {
         this.height = proportionalSize(40);
     }
     draw(){
-        ctx.fillStyle = "#acd157";
+        ctx.fillStyle = "#9DE23D";
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
     }
 }
@@ -83,7 +83,7 @@ class CheckPoint {
         this.claimed = false;
     }
     draw(){
-        ctx.fillStyle = "#f1be32";
+        ctx.fillStyle = "#FF907D";
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
     }
     claim(){
