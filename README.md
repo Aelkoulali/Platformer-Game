@@ -16,7 +16,9 @@ The project is designed to be clean and reusable: it follows good game-element o
 ## 🛠️ Tech Stack
 - HTML
 - CSS
-- JavaScript
+- JavaScript: 
+   - Core game logic and rendering
+   - OOP concepts: classes, objects, inheritance, encapsulation
 
 ## ▶️ How to Run
 1. Open `index.html` in your browser.
