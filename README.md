@@ -21,4 +21,4 @@ The project is designed to be clean and reusable: it follows good game-element o
    - OOP concepts: classes, objects, inheritance, encapsulation
 
 ## ▶️ How to Run
-1. Open `index.html` in your browser.
+- Open `index.html` in your browser.
